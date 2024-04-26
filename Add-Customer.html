@@ -17,61 +17,53 @@
         color: rgb(0, 0, 0);
         font-family: cormorant;
       }
+      .navbar-collapse {
+        display: flex;
+        justify-content: end;
+      }
+      .tag {
+        font-size: 25px;
+        font-weight: 900;
+        color: rgb(0, 0, 0);
+        font-family: cormorant;
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-items">
       <div class="container-fluid">
-        <div class="head">CAR WASH</div>
+        <div class="tag">CAR WASH</div>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="View all Customers.html"
+                >View all Customer</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="View all Customers.html"
-                >View all</a
-              >
+              <a class="nav-link" href="Add-Customer.html">Add Customer</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="Add-Customer.html"
-                >Add Customer</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="Search Customer.html"
+              <a class="nav-link" href="Search Customer.html"
                 >Search Customer</a
               >
             </li>
-
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="Delete-Customer.html"
+              <a class="nav-link" href="Delete-Customer.html"
                 >Delete Customer</a
               >
             </li>
@@ -79,6 +71,7 @@
         </div>
       </div>
     </nav>
+    <br />
     <div class="container">
       <div class="row">
         <div
@@ -86,28 +79,161 @@
         >
           <div class="row g-3">
             <div
-              class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
             >
-              <label for="" class="form-labell">Title</label>
-              <input type="text" class="form-control" />
+              <label for="" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Gender</label><br />
+              <input
+                type="radio"
+                name="Gender"
+                id=""
+                value="Male"
+                class="form-check-input"
+              />
+              <label for="" class="form-check-label">Male</label>
+
+              <input
+                type="radio"
+                name="Gender"
+                id=""
+                value="Female"
+                class="form-check-input"
+              />
+              <label for="" class="form-check-label">Female</label>
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Phone Number"
+              />
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">House name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter House name"
+              />
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">House land mark</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter land mark"
+              />
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Pin code</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter  Pin code"
+              />
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Car Manufacturer</label>
+              <select name="" id="" class="form-select">
+                <option value="select a car Manufacturer">
+                  select a blood group
+                </option>
+                <option value="A+">Suzuki</option>
+                <option value="AB+">Benz</option>
+                <option value="B+">BMW</option>
+                <option value="AB+">Jeep</option>
+                <option value="A+">Mahindra</option>
+                <option value="AB+">Tata</option>
+                <option value="B+">Hyundai</option>
+                <option value="AB+">Honda</option>
+              </select>
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Car Model</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Car Model"
+              />
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Car Colour</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Car Colour"
+              />
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Car Registration Number</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Registration Number"
+              />
             </div>
             <div
               class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
             >
-              <label for="" class="form-labell">Description</label>
-              <input type="text" class="form-control" />
+              <label for="" class="form-label">Work description</label>
+              <textarea
+                name=""
+                id=""
+                cols="20"
+                rows="5"
+                class="form-control"
+                placeholder="Work description"
+              ></textarea>
             </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Expected Delivery Date</label>
+              <input type="text" class="form-control" placeholder="" />
+            </div>
+            <div
+              class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <label for="" class="form-label">Total Amount</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Total Amount"
+              />
+            </div>
+
             <div
               class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
             >
-              <label for="" class="form-labell">Remarks</label>
-              <input type="text" class="form-control" />
+              <button class="btn btn-success">Add</button>
             </div>
-            <div
-              class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
-            >
-              <button type="button" class="btn btn-success">Add</button>
-            </div>
+            br
           </div>
         </div>
       </div>
